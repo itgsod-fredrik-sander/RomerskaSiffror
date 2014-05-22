@@ -1,4 +1,15 @@
 class Integer
+  # Private: Tests whether a number is negative or not
+  #
+  # Examples
+  #
+  #   -1.negative?
+  #   # =>  true
+  #   1234.negative?
+  #   # =>  false
+  #
+  # Returns true if the number is negative or false if the number is positive
+
   def negative?
     if self < 0
       return true
@@ -7,6 +18,19 @@ class Integer
     return false
   end
 end
+
+# Public: Converts an arabic number to roman number
+#
+# number - The arabic number to be converted
+#
+# Examples
+#
+#   romanize(747)
+#   # =>  'DCCXLVII'
+#   romanize(1978)
+#   # =>  'MCMLXXVIII'
+#
+# Returns the roman number
 
 def romanize(number)
   raise ArgumentError, 'can not encode zero' if number.zero?
