@@ -3,10 +3,10 @@ require_relative '../lib/romanize'
 
 describe 'converting arabic numerals to roman' do
 
-  it 'should take a number as argument' do
-    expect { romanize() }.to raise_error ArgumentError
-    expect { romanize(1000) }.not_to raise_error
-  end
+  #it 'should take a number as argument' do
+  #  expect { romanize() }.to raise_error ArgumentError
+  #  expect { romanize(1000) }.not_to raise_error
+  #end
 
   #Detta test kan kommenteras bort om man inte vill test 'Undantagshantering' på C- eller A-nivå
   #it 'should raise ArgumentError with correct error message if called with zero (romans had no way of writing zero' do
@@ -34,15 +34,15 @@ describe 'converting arabic numerals to roman' do
   #  romanize(9).should match 'IX'
   #end
 
-  #it 'should encode double digit numbers' do
-  #  romanize(10).should match 'X'
-  #  romanize(12).should match 'XII'
-  #  romanize(20).should match 'XX'
-  #  romanize(36).should match 'XXXVI'
-   #  romanize(44).should match 'XLIV'
-  #  romanize(87).should match 'LXXXVII'
-  #  romanize(92).should match 'XCII'
-  #end
+  it 'should encode double digit numbers' do
+    romanize(10).should match 'X'
+    romanize(12).should match 'XII'
+    romanize(20).should match 'XX'
+    romanize(36).should match 'XXXVI'
+    romanize(44).should match 'XLIV'
+    romanize(87).should match 'LXXXVII'
+    romanize(92).should match 'XCII'
+  end
 
   #it 'should encode triple digit numbers' do
   #  romanize(100).should match 'C'
