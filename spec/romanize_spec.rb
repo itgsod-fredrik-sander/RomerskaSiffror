@@ -44,12 +44,12 @@ describe 'converting arabic numerals to roman' do
     romanize(92).should match 'XCII'
   end
 
-  #it 'should encode triple digit numbers' do
-  #  romanize(100).should match 'C'
-  #  romanize(666).should match 'DCLXVI'
-  #  romanize(747).should match 'DCCXLVII'
-  #  romanize(999).should match 'CMXCIX'
-  #end
+  it 'should encode triple digit numbers' do
+    romanize(100).should match 'C'
+    romanize(666).should match 'DCLXVI'
+    romanize(747).should match 'DCCXLVII'
+    romanize(999).should match 'CMXCIX'
+  end
 
   #it 'should encode four digit numbers' do
   #  romanize(1000).should match 'M'
