@@ -26,7 +26,5 @@ def romanize(number)
     end
   end
 
-  puts number
-  puts roman_number
   return roman_number
 end
