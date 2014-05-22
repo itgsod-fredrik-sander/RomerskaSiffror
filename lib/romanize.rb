@@ -11,6 +11,8 @@ end
 def romanize(number)
   raise ArgumentError, 'can not encode zero' if number.zero?
   raise ArgumentError, 'can not encode negative number' if number.negative?
+  
+  arabic_roman_numbers = {}
 
   return "string"
 end
