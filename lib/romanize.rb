@@ -6,10 +6,6 @@ class Integer
 
     return false
   end
-
-  def to_a
-    return self.to_s.scan(/./).map {|value| value.to_i }
-  end
 end
 
 def romanize(number)
@@ -25,6 +21,6 @@ def romanize(number)
       number -= key
     end
   end
-
+' '
   return roman_number
 end
