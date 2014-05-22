@@ -9,9 +9,9 @@ describe 'converting arabic numerals to roman' do
   end
 
   #Detta test kan kommenteras bort om man inte vill test 'Undantagshantering' på C- eller A-nivå
-  #it 'should raise ArgumentError with correct error message if called with zero (romans had no way of writing zero' do
-  #  expect { romanize(0) }.to raise_error ArgumentError, 'can not encode zero'
-  #end
+  it 'should raise ArgumentError with correct error message if called with zero (romans had no way of writing zero' do
+    expect { romanize(0) }.to raise_error ArgumentError, 'can not encode zero'
+  end
 
   #Detta test kan kommenteras bort om man inte vill test 'Undantagshantering' på C- eller A-nivå
   #it 'should raise ArgumentError with correct error message if called with negative number' do
