@@ -14,9 +14,9 @@ describe 'converting arabic numerals to roman' do
   end
 
   #Detta test kan kommenteras bort om man inte vill test 'Undantagshantering' på C- eller A-nivå
-  #it 'should raise ArgumentError with correct error message if called with negative number' do
-  #  expect { romanize(rand(1000) * -1) }.to raise_error ArgumentError, 'can not encode negative number'
-  #end
+  it 'should raise ArgumentError with correct error message if called with negative number' do
+    expect { romanize(rand(1000) * -1) }.to raise_error ArgumentError, 'can not encode negative number'
+  end
 
   #it 'should return a string' do
   #  expect(romanize(rand(1000))).to be_instance_of String
