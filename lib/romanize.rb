@@ -10,6 +10,7 @@ end
 
 def romanize(number)
   raise ArgumentError, 'can not encode zero' if number.zero?
-  raise ArgumentError, 'can not encode negative number' if number.negative? if number.negative?
+  raise ArgumentError, 'can not encode negative number' if number.negative?
+  
 
 end
