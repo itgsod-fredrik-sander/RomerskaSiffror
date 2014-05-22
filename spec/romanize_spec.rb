@@ -18,9 +18,9 @@ describe 'converting arabic numerals to roman' do
     expect { romanize(rand(1000) * -1) }.to raise_error ArgumentError, 'can not encode negative number'
   end
 
-  #it 'should return a string' do
-  #  expect(romanize(rand(1000))).to be_instance_of String
-  #end
+  it 'should return a string' do
+    expect(romanize(rand(1000))).to be_instance_of String
+  end
 
   #it 'should encode single-digit numbers' do
   #  romanize(1).should match 'I'
